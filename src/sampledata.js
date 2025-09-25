@@ -1,3 +1,5 @@
+import e from "cors";
+
 const InstructionArray = [
   {
     title: "Personal Information",
@@ -98,8 +100,15 @@ const sampleUserData = {
   skills: ["JavaScript", "React", "Node.js", "CSS", "MongoDB"],
 };
 
+const transcriptArray = [
+  { category: "Introduction", transcription: "Hey, I am such and such" },
+  { category: "Experience", transcription: "I worked at XYZ company" },
+  { category: "Skills", transcription: "JavaScript, React, Node.js" },
+];
+
 
 
 
 export default InstructionArray;
 export { sampleUserData };
+export { transcriptArray };

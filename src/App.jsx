@@ -6,6 +6,10 @@ import { sampleUserData } from "./sampledata";
 import DataCollection from "./datacollection";
 import AudioRecorder from "./recorder";
 import SecondRecorder from "./secondrecorder";
+import EditingPage from "./editingpage";
+import { transcriptArray } from "./sampledata";
+
+
 
 const appStyle = {
   minHeight: "100vh",
@@ -21,6 +25,8 @@ export default function App() {
       <DataCollection />
       <h1>Below is the recoder testing </h1>
       <AudioRecorder />
+      <h1>Below is the editing page </h1>
+      <EditingPage dataArray={transcriptArray} />
     </div>
   );
 }
